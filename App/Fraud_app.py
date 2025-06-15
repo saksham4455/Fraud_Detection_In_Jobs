@@ -229,7 +229,10 @@ def build_X(df):
     X = pd.concat([struct.reset_index(drop=True), text_df.reset_index(drop=True)], axis=1)
 
     # Align to saved features
-    with open("feature_names.json", "r") as f:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    features_dir = os.path.join(base_dir, "..", "Features")
+
+    with open(os.path.join(features_dir, "feature_names.json"), "r") as f:
         expected_features = json.load(f)
 
     for col in expected_features:
@@ -238,6 +241,7 @@ def build_X(df):
     X = X[expected_features]
 
     return X
+
 
 
 def predict_single_job(title, description):
