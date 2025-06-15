@@ -113,12 +113,14 @@ Other models explored:
 ---
 
 🚀 How to Run This Project
+
 1️⃣ Clone this repo
 bash
 Copy
 Edit
 git clone https://github.com/yourusername/your-repo.git
 cd your-repo
+
 2️⃣ Set up Python environment
 Create and activate a virtual environment:
 
