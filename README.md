@@ -112,6 +112,30 @@ Other models explored:
 
 ---
 
+🚀 How to Run This Project
+1️⃣ Clone this repo
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
+2️⃣ Set up Python environment
+Create and activate a virtual environment:
+
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate    # On Linux/Mac
+venv\Scripts\activate       # On Windows
+
+3️⃣ Run the Streamlit app
+bash
+Copy
+Edit
+streamlit run app/app.py
+Then visit: http://localhost:8501 in your browser.
+
 ## Video Link 
 
 Link:  https://drive.google.com/drive/folders/1GgJfhA1iR8iwQ1QAzllVIOa2_n9Uh9-e?usp=drive_link
